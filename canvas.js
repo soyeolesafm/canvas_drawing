@@ -54,16 +54,17 @@ c.stroke()
 // ? reto cambiar el color de las lineas del circulo de manera aleatoria
 
 
-// todo 1 asigned values for the colors (i am goig easy and chosing only 3 or maybe 4 colors)
-// todo 2 make a variable for the color
+// todo 1 make an array for the color (i am goig easy and chosing only 3 or maybe 4 colors)
+// todo 2 use random to pick a random number for the array
 //  todo 3 make a process that randomly choose a color an assigned to c.strokeStyle
-
+// ? hacer un arrat para almacenar los colores usar la funcion Math.random () para ...
+// ? ... obtener un numero random y usarlo com index para seleccionar uno de los colores del array
 for (var i = 0;  i < 50; i++ ){
     var x = Math.random() * window.innerWidth
     var y = Math.random() * window.innerHeight
     var rad = Math.random() * 55
     // challenge code ->
-    var colorArr = ['red', 'blue', 'green', 'yellow', 'orange']
+    var colorArr = ['red', 'blue', 'green', 'yellow', 'black']
     var randomIndex = Math.floor(Math.random() * colorArr.length)
     var randomColor = colorArr[randomIndex]
     //  <- agregar randomColor a c strokeStyle 
